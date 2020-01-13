@@ -22,24 +22,33 @@ public class App
             splitCommand = myCalc.getInput().split(delimiter);
 
             String operand = splitCommand[0].toLowerCase();
-            int num1 = Integer.parseInt(splitCommand[1]);
-            int num2 = Integer.parseInt(splitCommand[2]);
+
+                int num1,num2;
+               // int num2 = Integer.parseInt(splitCommand[2]);
 
             switch (operand) {
 
                 case "add":
+                    num1 = Integer.parseInt(splitCommand[1]);
+                    num2 = Integer.parseInt(splitCommand[2]);
                     myCalc.add(num1, num2);
                     System.out.println(num1 + " ADD " + num2 + " = " + myCalc.getOutput());
                     break;
                 case "sub":
+                    num1 = Integer.parseInt(splitCommand[1]);
+                    num2 = Integer.parseInt(splitCommand[2]);
                     myCalc.subtract(num1, num2);
                     System.out.println(num1 + " SUBTRACT " + num2 + " = " + myCalc.getOutput());
                     break;
                 case "mul":
+                    num1 = Integer.parseInt(splitCommand[1]);
+                    num2 = Integer.parseInt(splitCommand[2]);
                     myCalc.multiply(num1, num2);
                     System.out.println(num1 + " MULTIPLY " + num2 + " = " + myCalc.getOutput());
                     break;
                 case "div":
+                    num1 = Integer.parseInt(splitCommand[1]);
+                    num2 = Integer.parseInt(splitCommand[2]);
                     myCalc.divide(num1, num2);
                     System.out.println(num1 + " DEVISION " + num2 + " = " + myCalc.getOutput());
                     break;
