@@ -17,7 +17,7 @@ public class App
 
         loop:
         while (true) {
-            System.out.println("CLICALC > ");
+            System.out.print("CLICALC > ");
             myCalc.setInput(scanner.nextLine());
             splitCommand = myCalc.getInput().split(delimiter);
 
